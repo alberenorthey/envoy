@@ -197,7 +197,7 @@ message Node {
 
   // Client feature support list. These are well known features described
   // in the Envoy API repository for a given major version of an API. Client features
-  // use reverse DNS naming scheme, for example `com.acme.feature`.
+  // use reverse DNS naming scheme, for example ``com.acme.feature``.
   // See :ref:`the list of features <client_features>` that xDS client may
   // support.
   repeated string client_features = 10;
