@@ -269,7 +269,7 @@ message ExtensionConfigSource {
 
   // Optional default configuration to use as the initial configuration if
   // there is a failure to receive the initial extension configuration or if
-  // `apply_default_config_without_warming` flag is set.
+  // ``apply_default_config_without_warming`` flag is set.
   google.protobuf.Any default_config = 2;
 
   // Use the default config as the initial configuration without warming and
