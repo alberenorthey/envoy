@@ -211,7 +211,7 @@ message ConfigSource {
   oneof config_source_specifier {
     option (validate.required) = true;
 
-    // Deprecated in favor of `path_config_source`. Use that field instead.
+    // Deprecated in favor of ``path_config_source``. Use that field instead.
     string path = 1 [deprecated = true, (envoy.annotations.deprecated_at_minor_version) = "3.0"];
 
     // Local filesystem path configuration source.
