@@ -152,7 +152,7 @@ message Policy {
 message Permission {
   option (udpa.annotations.versioning).previous_message_type = "envoy.config.rbac.v2.Permission";
 
-  // Used in the `and_rules` and `or_rules` fields in the `rule` oneof. Depending on the context,
+  // Used in the ``and_rules`` and ``or_rules`` fields in the ``rule`` oneof. Depending on the context,
   // each are applied with the associated behavior.
   message Set {
     option (udpa.annotations.versioning).previous_message_type =
