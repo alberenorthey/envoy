@@ -175,7 +175,7 @@ message Permission {
 
     // A header (or pseudo-header such as :path or :method) on the incoming HTTP request. Only
     // available for HTTP request.
-    // Note: the pseudo-header :path includes the query and fragment string. Use the `url_path`
+    // Note: the pseudo-header :path includes the query and fragment string. Use the ``url_path``
     // field if you want to match the URL path without the query and fragment string.
     route.v3.HeaderMatcher header = 4;
 
@@ -195,8 +195,8 @@ message Permission {
     type.matcher.v3.MetadataMatcher metadata = 7;
 
     // Negates matching the provided permission. For instance, if the value of
-    // `not_rule` would match, this permission would not match. Conversely, if
-    // the value of `not_rule` would not match, this permission would match.
+    // ``not_rule`` would match, this permission would not match. Conversely, if
+    // the value of ``not_rule`` would not match, this permission would match.
     Permission not_rule = 8;
 
     // The request server from the client's connection request. This is
@@ -208,7 +208,7 @@ message Permission {
     //   as explained below.
     //
     //   * If the :ref:`TLS Inspector <config_listener_filters_tls_inspector>`
-    //     filter is not added, and if a `FilterChainMatch` is not defined for
+    //     filter is not added, and if a ``FilterChainMatch`` is not defined for
     //     the :ref:`server name
     //     <envoy_v3_api_field_config.listener.v3.FilterChainMatch.server_names>`,
     //     a TLS connection's requested SNI server name will be treated as if it
