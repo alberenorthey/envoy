@@ -233,7 +233,7 @@ message Permission {
 message Principal {
   option (udpa.annotations.versioning).previous_message_type = "envoy.config.rbac.v2.Principal";
 
-  // Used in the `and_ids` and `or_ids` fields in the `identifier` oneof.
+  // Used in the ``and_ids`` and ``or_ids`` fields in the ``identifier`` oneof.
   // Depending on the context, each are applied with the associated behavior.
   message Set {
     option (udpa.annotations.versioning).previous_message_type =
