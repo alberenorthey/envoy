@@ -104,7 +104,7 @@ message SipFilter {
 
 // SipProtocolOptions specifies Sip upstream protocol options. This object is used in
 // :ref:`typed_extension_protocol_options<envoy_v3_api_field_config.cluster.v3.Cluster.typed_extension_protocol_options>`,
-// keyed by the name `envoy.filters.network.sip_proxy`.
+// keyed by the name ``envoy.filters.network.sip_proxy``.
 message SipProtocolOptions {
   // All sip messages in one dialog should go to the same endpoint.
   bool session_affinity = 1;
