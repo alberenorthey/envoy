@@ -101,7 +101,7 @@ message ThriftProxy {
   // A list of individual Thrift filters that make up the filter chain for requests made to the
   // Thrift proxy. Order matters as the filters are processed sequentially. For backwards
   // compatibility, if no thrift_filters are specified, a default Thrift router filter
-  // (`envoy.filters.thrift.router`) is used.
+  // (``envoy.filters.thrift.router``) is used.
   // [#extension-category: envoy.thrift_proxy.filters]
   repeated ThriftFilter thrift_filters = 5;
 
