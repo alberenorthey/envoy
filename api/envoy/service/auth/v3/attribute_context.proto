@@ -109,7 +109,7 @@ message AttributeContext {
     // For HTTP requests, it should be X-Request-ID or equivalent.
     string id = 1;
 
-    // The HTTP request method, such as `GET`, `POST`.
+    // The HTTP request method, such as ``GET``, ``POST``.
     string method = 2;
 
     // The HTTP request headers. If multiple headers share the same key, they
@@ -121,7 +121,7 @@ message AttributeContext {
     // the URL path and query-string. No decoding is performed.
     string path = 4;
 
-    // The HTTP request `Host` or 'Authority` header value.
+    // The HTTP request ``Host`` or 'Authority` header value.
     string host = 5;
 
     // The HTTP URL scheme, such as `http` and `https`.
