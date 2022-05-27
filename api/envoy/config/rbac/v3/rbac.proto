@@ -294,7 +294,7 @@ message Principal {
 
     // A header (or pseudo-header such as :path or :method) on the incoming HTTP
     // request. Only available for HTTP request. Note: the pseudo-header :path
-    // includes the query and fragment string. Use the `url_path` field if you
+    // includes the query and fragment string. Use the ``url_path`` field if you
     // want to match the URL path without the query and fragment string.
     route.v3.HeaderMatcher header = 6;
 
@@ -305,8 +305,8 @@ message Principal {
     type.matcher.v3.MetadataMatcher metadata = 7;
 
     // Negates matching the provided principal. For instance, if the value of
-    // `not_id` would match, this principal would not match. Conversely, if the
-    // value of `not_id` would not match, this principal would match.
+    // ``not_id`` would match, this principal would not match. Conversely, if the
+    // value of ``not_id`` would not match, this principal would match.
     Principal not_id = 8;
   }
 }
