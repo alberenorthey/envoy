@@ -698,7 +698,7 @@ message JwtAuthentication {
 
   // A map of unique requirement_names to JwtRequirements.
   // :ref:`requirement_name <envoy_v3_api_field_extensions.filters.http.jwt_authn.v3.PerRouteConfig.requirement_name>`
-  // in `PerRouteConfig` uses this map to specify a JwtRequirement.
+  // in ``PerRouteConfig`` uses this map to specify a JwtRequirement.
   map<string, JwtRequirement> requirement_map = 5;
 }
 
